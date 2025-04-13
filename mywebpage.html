@@ -2,44 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glenn Turner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glenn A Turner</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #333;
-    }
+    
+   body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+  background: url("https://source.unsplash.com/1600x900/?matrix,code") no-repeat center center fixed;
+  background-size: cover;
+  color: black;
+}
 
-    .container {
-      text-align: center;
-      background: white;
-      padding: 3rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    /* Background overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url("https://source.unsplash.com/1600x900/?matrix,code") no-repeat center center fixed;
+
+      z-index: -1;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      color: #000;
+      font-weight: bold;
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
     }
 
     p {
-      font-size: 1.25rem;
-      color: #666;
+      font-size: 2em;
+      margin-bottom: 2em;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 200px;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Glenn Turner</h1>
-    <p>Contract Developer</p>
+  <h1>Glenn A Turner</h1>
+  <p>Experienced Software Developer</p>
+  <div class="button-container">
+    <a href="#" class="button">Resume</a>
+    <a href="#" class="button">Portfolio</a>
   </div>
 </body>
 </html>
+
